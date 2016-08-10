@@ -140,9 +140,7 @@ h3 a:hover {
 }
 .sf-menu > li > a {
     display: table-cell;
-    font-size: 14px !important;
     height: 50px;
-    line-height: 19px !important;
     padding: 0 10px;
     text-align: center;
     text-transform: uppercase;

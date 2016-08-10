@@ -145,11 +145,7 @@ url('<?php echo PARENT_URL; ?>/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesome
 		</div>
 		<?php } ?>
 		<header class="motopress-wrapper header">
-			<div class="container">
-				<div class="row">
-					<div class="<?php echo cherry_get_layout_class( 'full_width_content' ); ?>" data-motopress-wrapper-file="wrapper/wrapper-header.php" data-motopress-wrapper-type="header" data-motopress-id="<?php echo uniqid() ?>">
-						<?php get_template_part('wrapper/wrapper-header'); ?>
-					</div>
-				</div>
+			<div data-motopress-wrapper-file="wrapper/wrapper-header.php" data-motopress-wrapper-type="header" data-motopress-id="<?php echo uniqid() ?>">
+				<?php get_template_part('wrapper/wrapper-header'); ?>
 			</div>
 		</header>
