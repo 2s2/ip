@@ -472,7 +472,6 @@ h3 a:hover {
 }
 .breadcrumb > .active {
     color: #00B9FF;
-    font-weight: bold;
 }
 
 .sidebar {}
@@ -618,7 +617,7 @@ h3 a:hover {
 .main-container,
 .footer-container {
     margin: 0 auto;
-    padding: 36px 0;
+    padding: 15px 0;
     position: relative;
     z-index: 1;
 }
