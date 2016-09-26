@@ -476,18 +476,22 @@ h3 a:hover {
 
 .sidebar {}
 .sidebar ul {list-style:none;}
+
 .sidebar ul li {
-    background: url(./images/block-layered-nav-marker.gif) 0 10px no-repeat;
-    color: #b28a60;
-    font-size: 17px;
-    line-height: 21px;
+    line-height: 22px;
     padding: 0 0 3px 13px;
+    position: relative;
 }
-.sidebar ul li a { text-decoration:none; }
-.sidebar ul li a:hover {
-    color: #fff;
-    transition: all 0.3s ease;
+
+.sidebar ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 10px;
+    left: 0;
+    position: absolute;
+    top: 2px;
 }
+
 .sidebar ul ul {padding: 3px 0 0 10px;}
 
 .publ-st1 {
