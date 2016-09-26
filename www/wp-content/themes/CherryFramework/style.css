@@ -505,10 +505,20 @@ h3 a:hover {
 }
 .list-1 {margin-bottom:15px;list-style:none;}
 .list-1 li {
-    background: url(./images/marker-10.png) no-repeat scroll 0 5px;
     line-height: 22px;
-    padding-left: 23px;
+    padding-left: 20px;
+    position: relative;
 }
+
+.list-1 li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 10px;
+    left: 6px;
+    position: absolute;
+    top: 1px;
+}
+
 .post-author {display:none !important;}
 
 .product-name {
