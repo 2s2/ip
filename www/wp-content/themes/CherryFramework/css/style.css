@@ -649,7 +649,6 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 .post__holder .post-header .post-title { margin-bottom:30px; }
 .post__holder .featured-thumbnail.large { margin-bottom:35px; }
 .post__holder .post_content { padding-bottom:20px; }
-.post__holder .post_content h1, .post__holder .post_content h2, .post__holder .post_content h3, .post__holder .post_content h4, .post__holder .post_content h5, .post__holder .post_content h6 { margin:5px 0 15px 0; }
 .post__holder .post_content p { margin:0 0 15px; }
 .post-title {
 	word-wrap:break-word;
@@ -690,6 +689,7 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 	border-top:1px solid #DDD;
 	border-bottom:1px solid #DDD;
 	font-size:.92em;
+	display: none;
 }
 .post_meta div[class^="post_"] {
 	display:inline-block;

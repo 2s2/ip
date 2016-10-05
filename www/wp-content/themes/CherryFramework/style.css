@@ -46,7 +46,6 @@ h3 {
 }
 
 h3 a:hover {
-    color: #fff;
     text-decoration: none;
 }
 .color1 {
@@ -607,7 +606,7 @@ h3 a:hover {
 }
 
 .game-info .game-img a {display:block;}
-.game-info .game-img a img {width:400px;}
+.game-info .play-buttons {display: none;}
 .game-info .play-buttons a {margin-right:5px;margin-bottom:5px;}
 
 .post-buttons {
