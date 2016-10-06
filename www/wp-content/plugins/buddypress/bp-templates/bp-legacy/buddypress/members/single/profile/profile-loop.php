@@ -20,7 +20,7 @@
 
 							<tr<?php bp_field_css_class(); ?>>
 
-								<td class="label"><?php bp_the_profile_field_name(); ?></td>
+								<td><?php bp_the_profile_field_name(); ?></td>
 
 								<td class="data"><?php bp_the_profile_field_value(); ?></td>
 
