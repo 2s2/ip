@@ -12,8 +12,6 @@
 */
 @import "css/style.css";
 
-html {margin-top: 37px;}
-
 body {
     color: #4f4f4f;
     font-family: 'Open Sans', sans-serif;
@@ -236,17 +234,8 @@ h5 {
 
 /* Header */
 .header-container-top {
-    background: url(./images/nav-bg.png) 0 0 repeat-x;
-    border-bottom: 1px solid #726047;
+    border-bottom: 1px solid #b5c5cb;
     line-height: 30px;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-.header-container-top:hover {
-    background: #222;
 }
 .header-container-top .links {margin: 0 -30px;}
 .header-container-top .links li {
@@ -256,15 +245,14 @@ h5 {
     padding: 0;
 }
 .header-container-top .links li a {
-    color: #eee;
+    color: #35a1d4;
     display: inline-block;
     font: 400 13px/32px "Open Sans",sans-serif;
     padding: 0 10px;
 }
 .header-container-top .links li a:hover {
-    background-color: #333;
+    background-color: #f8f8f8;
     text-decoration: none;
-    color: #b28a60;
 }
 .header-container {
     padding: 35px 0;
