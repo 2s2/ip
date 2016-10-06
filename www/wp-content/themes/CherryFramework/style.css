@@ -416,21 +416,18 @@ h5 {
 }
 .banner-block a:hover img {opacity:1;}
 .banner-block a {
-    background: #000; 
-    border: 2px solid #726047; 
-    display: block; 
-    position: relative; 
-    text-align: right; 
+    border: 1px solid #ccc;
+    display: block;
+    position: relative;
+    text-align: right;
     transition: all 0.3s ease;
 }
 .banner-block li {margin-bottom: 33px;}
 .banner-block .banner-block-center {
-    border: 1px solid #272728;
     box-shadow: inset 0 0 30px rgba(255,255,255,0.18);
     box-sizing: border-box;
     height: 89.9%;
     left: 3%;
-    padding: 3.5% 2%;
     position: absolute;
     text-align: left;
     text-transform: uppercase;
@@ -442,7 +439,6 @@ h5 {
     box-shadow: inset 0 0 30px rgba(255,255,255,0.30);
 }
 .banner-block h2 {
-    color: #b28a60;
     font-family: 'Great Vibes',cursive;
     font-size: 55px;
     line-height: 80px;
@@ -451,7 +447,6 @@ h5 {
 }
 .banner-block h3 {
     border: none;
-    color: #fff;
     font-size: 23px;
     line-height: 28px;
     margin: -19px 0 0px;

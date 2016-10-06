@@ -6,7 +6,7 @@
 
 #slider-wrapper {
 	overflow: hidden;
-  border: 2px solid #726047;
+  border: 1px solid #ccc;
   margin-bottom: 30px;
 }
 
@@ -430,9 +430,7 @@
 .pattern_10 .camera_overlayer {
 	background: url(../images/camera/patterns/overlay10.png) repeat;
 }
-.camera_caption {
-	color: #fff;
-}
+
 .camera_caption > div {
 	background: #000;
 	background: rgba(0, 0, 0, 0.8);
@@ -1077,17 +1075,17 @@
 .fluid_container_wrap { overflow: hidden; border: 2px solid #726047; margin-bottom: 30px;}
 .camera_wrap { margin-bottom: 0 !important;}
 .camera_wrap .camera_pag .camera_pag_ul {position: absolute; bottom: 26px; width: 100%; text-align: center;}
-.camera_wrap .camera_pag .camera_pag_ul li {margin: 0 7px; background: none; text-indent:0; border-radius: 0; width: auto; height: auto; }
+.camera_wrap .camera_pag .camera_pag_ul li {margin: 0 7px; background: none; text-indent:0; border-radius: 0; width: auto; height: auto; color: #808e95;}
 .camera_wrap .camera_pag .camera_pag_ul li span {display: none;}
 .camera_wrap .camera_pag .camera_pag_ul li:before { font-family: FontAwesome; content: "\f111";  font-size: 12px; line-height: 12px;}
 .camera_wrap .camera_pag .camera_pag_ul li:hover:before,
-.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent:before {color: #b28a60;}
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent:before {color: #f60;}
 
 .camera_caption {top: 75px;}
 .camera_caption > div {background: none; text-transform: uppercase; margin: 0 0 0 64px; }
-.lof_camera_title {font-size: 22px; line-height: 27px; color: #b28a60;}
-.lof_camera_title2 {font-size: 25px; line-height: 30px; color: #fff; margin-bottom: 14px;}
-.lof_camera_desc {font-size: 17px; line-height: 19px; color: #747474; margin-bottom:20px; width: 45%;letter-spacing: 0.5px;text-transform: initial;}
+.lof_camera_title {font-size: 22px; line-height: 27px;}
+.lof_camera_title2 {font-size: 25px; line-height: 30px; margin-bottom: 14px;}
+.lof_camera_desc {font-size: 17px; line-height: 24px; color: #747474; margin-bottom:20px; width: 45%;letter-spacing: 0.5px;text-transform: initial;}
 .camera_link {position: absolute; z-index: 1; width: 100%; left: 0;}
 
 @media only screen and (min-width: 980px) and (max-width: 1199px) { 
