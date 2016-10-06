@@ -1034,6 +1034,7 @@ p.gravatar {
 .pagination__posts {
 	margin:0;
 	text-align:center;
+	clear: both;
 }
 .blog .isotope {
 	margin:0 -5px 20px;
