@@ -27,7 +27,6 @@ get_header(); ?>
 						<?php get_sidebar(); ?>
 					</div>
 				</div>
-<?php get_template_part("static/static-recent-posts"); ?>
 			</div>
 			<?php do_action( 'cherry_after_home_page_content' ); ?>
 		</div>
