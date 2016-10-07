@@ -708,27 +708,6 @@ h5 {
         margin: 0;
     }
 }
-.products-grid:before,
-.products-list:before,
-.products-grid:after,
-.products-list:after {
-    background-size: cover;
-    background: url(./images/products-icon-left.png) no-repeat left top;
-    bottom: 4px;
-    content: ".";
-    font-size: 0;
-    height: 25px !important;
-    left: 5px;
-    position: absolute;
-    width: 25px !important;
-}
-.products-grid:after,
-.products-list:after {
-    background-size: cover;
-    background: url(./images/products-icon-right.png) no-repeat left top;
-    left: auto;
-    right: 5px;
-}
 
 .home-page .products-grid {
     padding: 5px 5px 35px;
