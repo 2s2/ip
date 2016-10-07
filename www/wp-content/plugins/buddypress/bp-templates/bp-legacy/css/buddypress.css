@@ -671,14 +671,33 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
     width: 35%;
 }
 #buddypress .standard-form#signup_form input[type=text],
+#buddypress .standard-form#signup_form input[type=email],
+#buddypress .standard-form#signup_form input[type=password],
+#buddypress .standard-form#signup_form input[type=number],
+#buddypress .standard-form#signup_form select,
 #buddypress .standard-form#signup_form textarea,
 #buddypress .form-allowed-tags,
 #buddypress #commentform input[type=text],
 #buddypress #commentform textarea {
-    width: 90%;
+    box-sizing: border-box;
+    height: auto;
+    width: 95%;
+}
+@media (max-width: 767px) {
+    #buddypress .standard-form#signup_form input[type=text],
+    #buddypress .standard-form#signup_form input[type=email],
+    #buddypress .standard-form#signup_form input[type=password],
+    #buddypress .standard-form#signup_form input[type=number],
+    #buddypress .standard-form#signup_form select,
+    #buddypress .standard-form#signup_form textarea,
+    #buddypress .form-allowed-tags,
+    #buddypress #commentform input[type=text],
+    #buddypress #commentform textarea {
+        width: 100%;
+    }
 }
 #buddypress .standard-form#signup_form div.submit {
-    float: right;
+    text-align: center;
 }
 #buddypress div#signup-avatar img {
     margin: 0 15px 10px 0;
@@ -725,10 +744,15 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
 #buddypress .standard-form #blog-details-section,
 #buddypress .standard-form #profile-details-section {
     float: left;
+    margin-right: 2%;
     width: 48%;
 }
-#buddypress .standard-form #profile-details-section {
-    float: right;
+@media (max-width: 767px) {
+    #buddypress .standard-form #basic-details-section,
+    #buddypress .standard-form #blog-details-section,
+    #buddypress .standard-form #profile-details-section {
+        width: 100%;
+    }
 }
 #buddypress .standard-form #blog-details-section,
 #buddypress #notifications-bulk-management {
