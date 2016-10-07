@@ -836,9 +836,9 @@ function _admin_bar_bump_cb() { ?>
 <style type="text/css" media="screen">
 	html { margin-top: 32px !important; }
 	* html body { margin-top: 32px !important; }
-	@media screen and ( max-width: 782px ) {
-		html { margin-top: 46px !important; }
-		* html body { margin-top: 46px !important; }
+	@media screen and ( max-width: 979px ) {
+		html { margin-top: 25px !important; }
+		* html body { margin-top: 25px !important; }
 	}
 </style>
 <?php

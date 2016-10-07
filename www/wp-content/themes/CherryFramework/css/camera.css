@@ -9,6 +9,11 @@
   border: 1px solid #ccc;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+	#slider-wrapper {
+		display: none;
+	}
+}
 
 .camera_wrap img, 
 .camera_wrap ol, .camera_wrap ul, .camera_wrap li,
@@ -1090,21 +1095,21 @@
 
 @media only screen and (min-width: 980px) and (max-width: 1199px) { 
 	.camera_wrap {min-height:inherit;}
-	.camera_caption {top: 60px;}
+	.camera_caption {top: 25px;}
 	.camera_caption > div {margin-left: 30px;}
 	.camera_wrap .camera_pag .camera_pag_ul {bottom: 30px;}
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) { 
 	.fluid_container_wrap {margin-bottom: 20px;}
 	.camera_wrap {min-height:inherit;}
-	.camera_caption {top: 30px;}
-	.camera_caption > div {margin-left: 20px;}
+	.camera_caption {top: 5px;}
+	.camera_caption > div {margin-left: 0;}
 	.camera_wrap .camera_pag .camera_pag_ul {bottom: 20px;}
-	.lof_camera_title {font-size: 30px; line-height: 30px;}
-	.lof_camera_title2 {font-size: 36px; line-height: 36px;}
-	.lof_camera_desc {width: 60%;}
+	.lof_camera_title {font-size: 20px; line-height: 20px;}
+	.lof_camera_title2 {font-size: 26px; line-height: 26px;}
+	.lof_camera_desc {font-size: 15px; line-height: 18px; width: 50%;}
 }
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
 	.camera_wrap {min-height:inherit;}
 	.camera_caption {top: 30px;}
 	.camera_caption > div {margin-left: 20px;}

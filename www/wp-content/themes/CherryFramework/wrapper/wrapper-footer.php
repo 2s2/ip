@@ -1,16 +1,16 @@
 <?php /* Wrapper Name: Footer */ ?>
 <div class="row footer-widgets">
 	<div class="footer">
-		<div class="span3" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-1">
+		<div class="span3 footer-column" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-1">
 			<?php dynamic_sidebar("footer-sidebar-1"); ?>
 		</div>
-		<div class="span3" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-2">
+		<div class="span3 footer-column" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-2">
 			<?php dynamic_sidebar("footer-sidebar-2"); ?>
 		</div>
-		<div class="span3" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-3">
+		<div class="span3 footer-column" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-3">
 			<?php dynamic_sidebar("footer-sidebar-3"); ?>
 		</div>
-		<div class="span3" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-4">
+		<div class="span3 footer-column" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-4">
 			<?php dynamic_sidebar("footer-sidebar-4"); ?>
 		</div>
 	</div>

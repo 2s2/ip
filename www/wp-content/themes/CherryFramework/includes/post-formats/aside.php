@@ -64,7 +64,7 @@
     <?php else :?>
     <!-- Post Content -->
     <div class="post_content">
-      <div class="game-info m3">
+      <div class="game-info">
         <div class="game-img"><a title="<?php echo $game_names; ?>" href="<?php echo $game_image_link; ?>" rel="lightbox[1]"><img src="<?php echo $game_image_link; ?>" alt="<?php echo $game_names; ?>" /></a></div>
         <div class="extra-wrap">
           <h3><?php echo $game_names; ?></h3>
