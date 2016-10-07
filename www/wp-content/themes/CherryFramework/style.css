@@ -665,7 +665,7 @@ h5 {
     font-size: 14px;
     font-weight: normal;
     line-height: 17px;
-    margin: 0 0 20px !important;
+    margin: 0 0 10px !important;
     min-height: 34px;
 }
 
@@ -692,13 +692,20 @@ h5 {
 .post_wrapper {
     margin: 0 10px 20px !important;
 }
+@media (max-width: 767px) {
+    .post_wrapper {
+        float: left;
+        margin: 0 1% 2% !important;
+        width: 48%;
+    }
+}
 
 .products-grid {
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     box-sizing: border-box;
-    float: left; 
+    float: left;
     margin: 0 10px 20px;
-    padding: 19px; 
+    padding: 10px;
     position: relative;
     text-align: center;
 
@@ -708,39 +715,16 @@ h5 {
         margin: 0;
     }
 }
-.products-grid:before,
-.products-list:before,
-.products-grid:after,
-.products-list:after {
-    background-size: cover;
-    background: url(./images/products-icon-left.png) no-repeat left top;
-    bottom: 4px;
-    content: ".";
-    font-size: 0;
-    height: 25px !important;
-    left: 5px;
-    position: absolute;
-    width: 25px !important;
-}
-.products-grid:after,
-.products-list:after {
-    background-size: cover;
-    background: url(./images/products-icon-right.png) no-repeat left top;
-    left: auto;
-    right: 5px;
-}
 
 .home-page .products-grid {
     padding: 5px 5px 35px;
 }
 
 .product-image {
-    border: 1px solid #ccc;
     display: block;
     height: auto;
     margin: 0 auto 15px;
     max-width: 242px;
-    padding: 3px;
     text-align: center;
 }
 
@@ -750,7 +734,7 @@ h5 {
     max-width:100%;
 }
 .eDetails {
-    padding: 10px;
+    margin-top: 10px;
 }
 .game-info {
     margin-bottom: 30px;
