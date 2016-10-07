@@ -17,7 +17,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    min-width: 320px;
+    min-width: 300px;
     position: relative;
 }
 
@@ -106,6 +106,12 @@ h5 {
     border-top: 1px solid #b5c5cb;
 }
 
+@media (max-width: 767px) {
+    .nav-container {
+        border: none;
+    }
+}
+
 .sf-menu {
     float:none;
     font-size: 13px;
@@ -133,6 +139,19 @@ h5 {
     position: absolute;
 }
 
+@media (max-width: 1199px) {
+    .sf-menu .menu-item-has-children:before {
+        left: 75px;
+    }
+}
+
+@media (max-width: 979px) {
+    .sf-menu .menu-item-has-children:before {
+        bottom: -2px;
+        left: 54px;
+    }
+}
+
 .sf-menu li a {
     border: none;
     color: #fff;
@@ -149,6 +168,19 @@ h5 {
     text-transform: uppercase;
     vertical-align: middle;
     width: 154px;
+}
+@media (max-width: 1199px) {
+    .sf-menu > li > a {
+        width: 136px;
+    }
+}
+@media (max-width: 979px) {
+    .sf-menu > li > a {
+        font-size: 12px !important;
+        line-height: 15px !important;
+        height: 40px;
+        width: 99px;
+    }
 }
 .sf-menu > li > a:before {
     background: #35a1d4;
@@ -171,6 +203,11 @@ h5 {
     right: 0;
     top: 4px;
     width: 1px;
+}
+@media (max-width: 979px) {
+    .sf-menu > li > a:after {
+        height: 33px;
+    }
 }
 
 .sf-menu > li:last-child > a:after {
@@ -235,14 +272,17 @@ h5 {
 /* Header */
 .header-container-top {
     border-bottom: 1px solid #b5c5cb;
-    line-height: 30px;
 }
-.header-container-top .links {margin: 0 -30px;}
 .header-container-top .links li {
     display: inline;
     float: left;
     line-height: 30px;
     padding: 0;
+}
+@media (max-width: 767px) {
+    .header-container-top .links li {
+        line-height: inherit;
+    }
 }
 .header-container-top .links li a {
     color: #35a1d4;
@@ -250,12 +290,23 @@ h5 {
     font: 400 13px/32px "Open Sans",sans-serif;
     padding: 0 10px;
 }
+@media (max-width: 767px) {
+    .header-container-top .links li a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
 .header-container-top .links li a:hover {
     background-color: #f8f8f8;
     text-decoration: none;
 }
 .header-container {
     padding: 35px 0;
+}
+@media (max-width: 767px) {
+    .header-container {
+        padding: 15px 0;
+    }
 }
 .header-container-top .header-info { float: right; margin-top:25px; }
 
@@ -348,6 +399,16 @@ h5 {
     line-height: 25px !important;
     margin-right: 6px;
 }
+@media (max-width: 767px) {
+    #wp-admin-bar-profile a:before,
+    #wp-admin-bar-bonuses a:before,
+    #wp-admin-bar-deposit a:before,
+    #wp-admin-bar-loginout a:before,
+    .header-container-top .links li:first-child a:before {
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+}
 
 #wpadminbar #wp-admin-bar-homepage .ab-item {
     -webkit-background-size: 100% 100%;
@@ -365,9 +426,63 @@ h5 {
 #wp-admin-bar-loginout a:before {content: "\f084";}
 .header-container-top .links li:first-child a:before {content: "\f234";}
 
+@media (max-width: 767px) {
+    html #wpadminbar {
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 979px) {
+    html #wpadminbar {
+        height: 24px !important;
+    }
+
+    #wpadminbar ul li {
+        padding: 0 5px !important;
+    }
+
+    #wpadminbar #wp-admin-bar-edit>.ab-item:before,
+    #wpadminbar #wp-admin-bar-my-account>.ab-item:before,
+    #wpadminbar #wp-admin-bar-my-sites>.ab-item:before,
+    #wpadminbar #wp-admin-bar-site-name>.ab-item:before,
+    #wpadminbar #wp-admin-bar-new-content .ab-item .ab-icon:before {
+        height: 24px !important;
+        font-size: 19px !important;
+        line-height: 24px !important;
+        top: 0 !important;
+        width: 24px !important;
+    }
+
+    #wpadminbar #wp-admin-bar-edit>.ab-item,
+    #wpadminbar #wp-admin-bar-my-account>.ab-item,
+    #wpadminbar #wp-admin-bar-my-sites>.ab-item,
+    #wpadminbar #wp-admin-bar-site-name>.ab-item,
+    #wpadminbar .ab-icon,
+    #wpadminbar .quicklinks .ab-empty-item,
+    #wpadminbar .quicklinks>ul>li>a {
+        height: 24px !important;
+        line-height: 24px !important;
+        width: 24px !important;
+    }
+
+    #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar>a img {
+        border: none !important;
+        height: 24px !important;
+        margin: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 24px !important;
+    }
+}
+
 #wp-toolbar {
     margin: 0 auto !important;
-    width: 1230px !important;
+}
+
+#wp-toolbar:after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 #search-header .search-form_it {
@@ -397,6 +512,11 @@ h5 {
 
 /* Banners */
 
+@media (max-width: 767px) {
+    .banner-block {
+        display: none;
+    }
+}
 .banner-block img {
     opacity:0.4;
     max-width: 100%;
@@ -412,16 +532,15 @@ h5 {
 }
 .banner-block li {margin-bottom: 33px;}
 .banner-block .banner-block-center {
-    box-shadow: inset 0 0 30px rgba(255,255,255,0.18);
     box-sizing: border-box;
-    height: 89.9%;
-    left: 3%;
+    height: 94%;
+    left: 2%;
     position: absolute;
     text-align: left;
     text-transform: uppercase;
-    top: 5.1%;
+    top: 2%;
     transition: all 0.3s ease;
-    width: 94.5%;
+    width: 96%;
 }
 .banner-block a:hover .banner-block-center {
     box-shadow: inset 0 0 30px rgba(255,255,255,0.30);
@@ -433,6 +552,12 @@ h5 {
     margin: 0;
     text-transform: capitalize;
 }
+@media (max-width: 979px) {
+    .banner-block h2 {
+        font-size: 37px;
+        line-height: 60px;
+    }
+}
 .banner-block h3 {
     border: none;
     font-size: 23px;
@@ -440,11 +565,27 @@ h5 {
     margin: -19px 0 0px;
     padding: 0 0 0 8px;
 }
+@media (max-width: 1200px) {
+    .banner-block h3 {
+        margin-top: -7px;
+    }
+}
+@media (max-width: 979px) {
+    .banner-block h3 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
 .banner-block p {
     color: #999;
     line-height: 19px;
     padding-left: 8px;
     width: 70%;
+}
+@media (max-width: 1200px) {
+    .banner-block p {
+        display: none;
+    }
 }
 
 /* ----------- */
@@ -537,6 +678,11 @@ h5 {
     text-transform: uppercase;
     transition: all 0.3s ease;
 }
+@media (max-width: 1200px) {
+    .product-name a {
+        font-size: 13px;
+    }
+}
 
 .product-name span {
     display:inline-block;
@@ -551,10 +697,16 @@ h5 {
     border: 1px solid #ccc; 
     box-sizing: border-box;
     float: left; 
-    margin: 0 10px 20px!important;
+    margin: 0 10px 20px;
     padding: 19px; 
     position: relative;
     text-align: center;
+
+}
+@media (max-width: 979px) {
+    .products-grid {
+        margin: 0;
+    }
 }
 .products-grid:before,
 .products-list:before,
@@ -600,14 +752,35 @@ h5 {
 .eDetails {
     padding: 10px;
 }
+.game-info {
+    margin-bottom: 30px;
+}
+@media (max-width: 979px) {
+    .game-info {
+        margin-bottom: 0;
+    }
+}
 .game-info .game-img {
     float: left;
     margin: 0 20px 0 0;
+}
+@media (max-width: 979px) {
+    .game-info .game-img {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 .game-info .game-img a {display:block;}
 .game-info .play-buttons {display: none;}
 .game-info .play-buttons a {margin-right:5px;margin-bottom:5px;}
+
+@media (max-width: 979px) {
+    .game-info .alert-block {
+        display: none;
+    }
+}
 
 .post-buttons {
     text-align: center;
@@ -634,8 +807,13 @@ h5 {
     position: relative;
     z-index: 1;
 }
-.footer-container-bottom .footer {
-    margin: 0 -30px;
+@media (max-width: 767px) {
+    .nav-container,
+    .header-container,
+    .main-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 .footer {
     background: none;
@@ -649,6 +827,16 @@ h5 {
     font-size: 13px;
     padding: 30px 0;
 }
+@media (max-width: 767px) {
+    .footer-container {
+        border: none;
+        padding: 20px;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
 .footer-cols-wrapper { position:relative;overflow:hidden;}
 .footer-col {float:left;margin-right:2.6%;width:23%;}
 .footer-col.last { margin-right:0;}
@@ -658,6 +846,11 @@ h5 {
     line-height: 17px;
     margin-top: 0;
     position: relative;
+}
+@media (max-width: 767px) {
+    .footer h4 {
+        margin-bottom: 10px;
+    }
 }
 .footer ul li { display:block; padding:0 0 8px 0;}
 .footer ul li a {
@@ -687,6 +880,12 @@ h5 {
 .form-list li {}
 .form-list li.hide { display:none; }
 .form-list .field { float:left; width:50%; }
+@media (max-width: 767px) {
+    .form-list .field {
+        margin-right: 2%;
+        width: 48%;
+    }
+}
 .form-list label {
     color: #59595c;
     display: inline-block;
@@ -699,7 +898,7 @@ h5 {
     z-index: 0; 
 }
 .form-list label.required {}
-.form-list label.required em { float:right; font-style:normal; color:#b28a60; position:absolute; top:0; right:-8px; }
+.form-list label.required em { float:right; font-style:normal; color:#e51937; position:absolute; top:0; right:-8px; }
 .form-list .input-box { display:block; clear:both; margin-bottom:25px; }
 .form-list .input-box input {width:93%;margin-bottom:0;}
 .form-list .input-box input.secure-code { text-align:center; margin-right:10px; padding:9px; width:50px; }
